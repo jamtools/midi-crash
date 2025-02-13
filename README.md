@@ -10,9 +10,9 @@ Then:
 - Clone this repo and run `go mod tidy`
 - Run `go run jack-peak-meter.go`.
 
-This is based off of an existing tool that shows a volume meter of an audio input https://github.com/gethiox/jack-peak-meter. Modifications were done [here](https://github.com/jamtools/midi-crash/pull/1/files) to make the MIDI functionality work.
+This is based off of an existing tool that shows a volume meter of an audio input https://github.com/gethiox/jack-peak-meter. Modifications were done [in this PR](https://github.com/jamtools/midi-crash/pull/1/files) to make the MIDI functionality work. The program uses a [volume spike backoff algorithm](https://github.com/jamtools/midi-crash/blob/master/doit.go), and has the outgoing MIDI functionality [here](https://github.com/jamtools/midi-crash/blob/3ad175874ec7e1814e60c17f66830c4dc0c6d044/midi.go#L20) and [here](https://github.com/jamtools/midi-crash/blob/3ad175874ec7e1814e60c17f66830c4dc0c6d044/doit.go#L86).
 
-Thank you [@gethiox](https://github.com/gethiox)! I like the original README and it's staying here:
+Thank you [@gethiox](https://github.com/gethiox) for the tool to build this on top of! I like the original README and it's staying here:
 
 ---
 
