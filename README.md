@@ -1,3 +1,21 @@
+# MidiCrash
+
+Use your crash cymbal as a midi controller!
+
+In order to use this, you can put a [drum trigger](https://www.sweetwater.com/store/detail/DDT--drumdial-drum-trigger-with-clip-mount) on your cymbal stand (rather than the cymbal itself), plug the drum trigger into your computer through an audio interface or something cheaper like [this](https://www.amazon.com/6-35mm-Plated-Interconnect-Shelled-Adapter/dp/B07VGF7DJV).
+
+Then:
+- Download [JACK Audio](https://jackaudio.org) and configure it to use your intended audio input
+- Download [Go](https://github.com/jamtools/midi-crash/blob/master/jack-peak-meter.go)
+- Clone this repo and run `go mod tidy`
+- Run `go run jack-peak-meter.go`.
+
+This is based off of an existing tool that shows a volume meter of an audio input https://github.com/gethiox/jack-peak-meter. Modifications were done [here](https://github.com/jamtools/midi-crash/pull/1/files) to make the MIDI functionality work.
+
+Thank you [@gethiox](https://github.com/gethiox)! I like the original README and it's staying here:
+
+---
+
 # ULTIMATE SOUND VISUALIZER 2,000,000
 
 Welcome!  
